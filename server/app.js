@@ -30,3 +30,14 @@ if (!module.parent) {
   console.log('Listening on', app.get('port'));
 }
 
+
+
+
+
+
+
+// setup express for app.js (connect client w/ db)
+//
+// write rexpress GET/POST
+//
+// pass tests, write more tests

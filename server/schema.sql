@@ -6,7 +6,7 @@ CREATE TABLE messages (
   /* Describe your table here.*/
   id INT(15) AUTO_INCREMENT PRIMARY KEY,
   text VARCHAR(255),
-  room VARCHAR(20),
+  room_id INT(15),
   user_id INT(15)
 );
 
@@ -14,8 +14,15 @@ CREATE TABLE messages (
 CREATE TABLE users (
   id INT(15) AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(20)
-  CONSTRAINT FOREGIN KEY ()
-  REFERENCES ()
+  -- CONSTRAINT FOREGIN KEY (TO DO)
+  -- REFERENCES ()
+);
+
+CREATE TABLE rooms (
+  id INT(15) AUTO_INCREMENT PRIMARY KEY,
+  roomname VARCHAR(20)
+  -- CONSTRAINT FOREGIN KEY (TO DO)
+  -- REFERENCES ()
 );
 
 
@@ -64,7 +71,7 @@ CREATE TABLE users (
  -- -- ---
  -- -- Foreign Keys
  -- -- ---
- -- 
+ --
  -- ALTER TABLE `messages` ADD FOREIGN KEY (user_id) REFERENCES `users` (`id`);
  --
  -- -- ---

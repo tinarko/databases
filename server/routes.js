@@ -1,3 +1,6 @@
+// ROUTER:
+//
+
 var controller = require('./controllers');
 var router = require('express').Router();
 
@@ -12,4 +15,3 @@ router.post('/users', controller.users.post);
 
 
 module.exports = router;
-
